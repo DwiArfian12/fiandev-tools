@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalsibil | FianDev</title>
+</head>
+<body>
+    <nav>
+        <div class="item">
+            <h1>Kalsibil</h1>
+        </div>
+        <div class="item">
+            <h1>Cilikin</h1>
+        </div>
+        <div class="item">
+            <h1>Gateks</h1>
+        </div>
+    </nav>
+    <main>
+        <div class="title">
+            <h1>Kalsibil</h1>
+            <p>Kalkulator Konversi Bilangan. Sebuah alat yang digunakan untuk mengonversi angka dari satu sistem bilangan ke sistem bilangan lainnya.</p>
+        </div>
+        <div class="content">
+            <div class="form">
+                <div class="dropdown">
+                    <button class="dropbtn">Pilih input</button>
+                    <div class="dropdown-content">
+                        <a onclick="pilBiner()" href="#">Biner</a>
+                        <a onclick="pilOktal()" href="#">Oktal</a>
+                        <a onclick="pilDesimal()" href="#">Desimal</a>
+                        <a onclick="pilHeksadesimal()" href="#">Heksadesimal</a>
+                    </div>
+                  </div>
+                <div class="form-group">
+                    <label id="lbl1" for="input">Biner</label>
+                    <input type="text" placeholder="0" name="input" id="input">
+                </div>
+                <h2>Output:</h2>
+                <div class="form-group">
+                    <label id="lbl2" for="output1">Oktal</label>
+                    <input type="text" placeholder="0" disabled name="output1" id="output1">
+                </div>
+                <div class="form-group">
+                    <label id="lbl3" for="output2">Desimal</label>
+                    <input type="text" placeholder="0" disabled name="output2" id="output2">
+                </div>
+                <div class="form-group">
+                    <label id="lbl4" for="output3">Heksadesimal</label>
+                    <input type="text" placeholder="0" disabled name="output3" id="output3">
+                </div>
+                <button onclick="convert()">Konversi <span>(enter)</span></button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

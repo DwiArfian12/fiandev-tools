@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri;
+}
+
+nav {
+  width: 10%;
+  height: 120vh;
+  background: #d8edfe;
+  padding-top: 20px;
+  float: left;
+  border-right: 3px solid #0a416a;
+}
+
+nav .item {
+  padding: 20px;
+  text-align: center;
+}
+
+nav .item:hover {
+  background: #fffffd;
+  cursor: pointer;
+}
+
+nav .item h1 {
+  color: #0a416a;
+  font-style: italic;
+  padding: 10px;
+  font-size: 28px;
+  border: 3.5px solid #0a416a;
+  background: #fffffd;
+}
+
+main {
+  padding-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .title {
+    width: 45%;
+}
+
+main .title h1 {
+  font-size: 51px;
+  color: #0a416a;
+  margin-bottom: 13px;
+}
+
+main .title p {
+  font-size: 23px;
+  color: #0a406aab;
+  margin-bottom: 10px;
+}
+
+main .content {
+  margin-top: 50px;
+  width: 70%;
+  background: #d8edfe;
+  display: flex;
+  align-items: left;
+  border: 3px solid #0a416a;
+}
+
+main .content .form {
+  text-align: left;
+  margin: 3% 6%;
+  align-items: left;
+  width: 100%;
+}
+
+.dropbtn {
+  background-color: #0a416a;
+  color: white;
+  padding: 11px 40px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fffffd;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #073152;
+}
+
+.form-group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 20px;
+  margin-bottom: 7px;
+  color: #0a416a;
+}
+
+.form-group input {
+  height: 35px;
+  width: 97.5%;
+  border: 3px solid #0a416a;
+  padding: 0 10px;
+  font-size: 17px;
+  color: #0a416a;
+}
+
+.form h2 {
+  margin: 20px 0;
+  color: #0a416a;
+}
+
+button {
+  margin: 30px 0;
+  width: 100%;
+  padding: 11px 0;
+  background: #0a416a;
+  color: #fffffd;
+  font-size: 20px;
+  border: none;
+}
+
+button span {
+  color: #fffffdbe;
+}
+
+button:hover {
+  background: #073152;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        height: 10%;
+        border-top: 3px solid #0a416a;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    nav .item h1 {
+        font-size: 20px;
+    }
+
+    main {
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main .title h1 {
+        font-size: 30px;
+    }
+
+    main .title {
+        width: 65%;
+    }
+
+    main .title p {
+        font-size: 19px;
+        margin-bottom: -20px;
+    }
+
+    .form-group input {
+        width: 88%;
+    }
+}
