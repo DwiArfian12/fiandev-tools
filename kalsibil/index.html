@@ -37,7 +37,7 @@
                   </div>
                 <div class="form-group">
                     <label id="lbl1" for="input">Biner</label>
-                    <input type="text" placeholder="0" name="input" id="input">
+                    <input onkeyup="convert()" type="text" placeholder="0" name="input" id="input">
                 </div>
                 <h2>Output:</h2>
                 <div class="form-group">
@@ -52,7 +52,6 @@
                     <label id="lbl4" for="output3">Heksadesimal</label>
                     <input type="text" placeholder="0" disabled name="output3" id="output3">
                 </div>
-                <button onclick="convert()">Konversi <span>(enter)</span></button>
             </div>
         </div>
     </main>
