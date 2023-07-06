@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Cilikin | FianDev</title>
+    <style>
+        :root {
+            --warnaElement: #d8fed8 ;
+            --warnaGaris: #1a6a0a ;
+            --warnaTeks: #346a0aab ;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,8 +40,8 @@
                     <h3>Pilih Foto/Gambar yang ingin kamu kompres <img src="" alt=""></h3>
                     <h4>* Format : .jpg, .jpeg, .png, dsb.</h4>
                 </div>
-                <div class="inpt">
-                    <label id="lbl1" for="input">Input gambar</label>
+                <div class="form-group">
+                    <label for="input">Input gambar</label>
                     <input onkeyup="convert()" type="file" placeholder="0" name="input" id="input">
                 </div>
             </div>
